@@ -1,0 +1,28 @@
+.cat {
+  height: 400px;
+  display: block;
+  margin: 0 auto; /* atas-bawah 0, kiri-kanan auto*/
+}
+
+.icon {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text {
+  display: inline-block;
+  color: white;
+}
+
+div {
+  background-color: #2596be;
+  height: 700px;
+  text-align: center;
+}
+
+.center-vertical {
+  display: inline-block;
+  height: 700px;
+  vertical-align: middle;
+}

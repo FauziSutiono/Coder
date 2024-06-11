@@ -1,0 +1,233 @@
+.red {
+  color: red;
+}
+
+/*
+red;, rgb(255, 255, 234);, rgba(23, 140, 50, 1);, hsl(234, 255, 26);, hsla(244, 23, 23, 0.3);, #ff233f;
+*/
+
+.white {
+  color: #ffd7de;
+}
+
+#text {
+  color: blue;
+}
+
+.alignment {
+  text-align: center; /*right, left, justify*/
+}
+
+.decoration {
+  text-decoration: overline underline line-through green;
+}
+
+.transformation {
+  text-transform: uppercase; /*lowercase*/
+}
+
+.spacing {
+  text-indent: 20px; /* tab / paragraft*/
+  letter-spacing: 10px; /* spasi huruf*/
+  word-spacing: 10px; /*spasi kata*/
+  white-space: wrap; /*scroll samping*/
+  line-height: 10px; /*tinggi baris*/
+}
+
+.shadow {
+  text-shadow: 20px 20px 0px red;
+  /* kanan-kiri, atas-bawah, warna*/
+}
+
+.div1 {
+  background-color: red;
+  height: 600px;
+}
+
+.div2 {
+  background-image: url("../HTML/Assets/roti_bakar.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover; /*gambar utuh*/
+  background-position: center; /*posisi gambar ke tengah*/
+  background-attachment: fixed;
+}
+
+.div {
+  width: 200px;
+  height: 100px;
+  padding: 20px 10px 30px 40px;
+}
+
+#content1,
+#content2 {
+  width: 200px;
+  height: 100px;
+  padding: 20px 10px 30px 40px;
+  border: solid black 10px;
+  margin: 10px 20px 30px 40px;
+  background-color: yellow;
+}
+
+#icon {
+  display: inline-block; /* jadi inline dan dapat mengatur layout seperti tinggi, lebar, margin */
+  width: 300px;
+}
+
+#display {
+  /* display: none; tulisan hilang */
+  /* display: inline; mengubah block jadi inline */
+  /* display: block; mungubah inline menjadi block */
+}
+
+#display1 {
+}
+
+ul {
+  list-style: none;
+  background-color: yellow;
+}
+
+li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  background-color: red;
+}
+
+.h-700 {
+  height: 700px;
+  position: relative; /* memberikan cakupan atau lingkup untuk posisi lainnya */
+}
+
+.bg-salmon {
+  background-color: salmon;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.position {
+  background-color: grey;
+  padding: 20px;
+  /* position: fixed; posisi berada pada tempat yg di set dan mfngikuti jika di scroll */
+  /* position: sticky; /* posisi mengikuti jika di scroll ke arah contentnya*/
+  /* position: relative; position berda pada posisi yang di set */
+  position: absolute; /* posisi tetap */
+  top: 10px;
+  right: 20px;
+}
+
+/* h1, h2 {
+  background-color: red;
+} */
+
+/*
+.red > h1 {
+  background-color: red;
+} mengubah warna pada class="red" dan mengarah hanya pada tag h1 
+
+.red h1 {
+  background-color: red;
+} mengubah warna pada class="red" dan mengarah pada semua h1 
+
+h2 + h3 {
+  color: red;
+} hanya satu h3 setelah h2 warnanya merah
+
+h2 ~ h3 {
+  color: red;
+} semua h3 setelah h2 warnanya merah
+*/
+
+/*
+pseudo selector
+
+input:focus {
+  background-color: red;
+} ketika di klik form input berwarna merah
+
+span:hover {
+ color: red;
+} berubah warna ketika cursor berada di tag
+
+a:visited {
+  color: yellow;
+} berubah warna ketika link di tekan
+*/
+
+/* Transform dan Filter */
+/*.dog {
+  /* transform: translateX(50px) * Bergeser ke kiri-kanan sebanyak 50px 
+    translateY(50px); Bergeser ke atas-bawah sebanyak 50px*/
+/* translateZ(50px); Sumbu depan-belakang */
+
+/* transform: translate(50px, 50px); singkat 2d x, y*/
+/* transform: translate3d(50px, 50px, 50px); singkat 3d x, y, z*/
+
+/* transform: skewX(20deg); Bergeser kekiri sebanyak 20 derajat */
+/*
+  transform: skewY(20deg); Bergeser kekanan sebanyak 20 derajat */
+
+/* transform: skew(20deg, 20deg); singkatnya */
+/* transform: rotate(30deg); memutar 30 derajat */
+/*transform: rotateX(70deg);
+  transform: rotateY(70deg);*/
+
+/* transform: scale(2); mengatur lebar */
+
+/* filter */
+/* filter: grayscale(100%); merubah warna menjadi grey */
+/* filter: blur(10px); membuat blur */
+/* filter: brightness(20%); mengatur kecerahan gambar */
+/*}*/
+
+/*
+.dog:hover {
+  filter: blur(0);
+}*/
+
+/* Animasi */
+/*
+.dog {
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-property: transform filter;
+  transition-timing-function: ease-in-out;
+}
+
+.dog:hover {
+  filter: grayscale(100%);
+  transform: translateX(30px);
+}*/
+
+/*
+@keyframes bergerak {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.dog {
+  animation: bergerak 2s infinite;
+}*/
+
+@keyframes bergerak {
+  from {
+    /*transform: scale(2);*/
+  }
+  to {
+    /*transform: scale(1);*/
+  }
+}
+
+.dog {
+  animation: bergerak 2s infinite;
+}
